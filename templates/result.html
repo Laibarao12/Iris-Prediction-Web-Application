@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="result_page">
+ <h2 class="result_title">Predicted Iris Specie:</h2>
+ <h3 class="result_prediction">Prediction is: {{ species }}</h3>
+
+  
+  <a href="/" class="try-again-link">Try Again</a>
+  
+  <center>
+    <img src="{{ url_for('static', filename=image_file) }}" alt="{{ species }}" width="300" class="result_page">
+  </center>
+</body>
+</html>

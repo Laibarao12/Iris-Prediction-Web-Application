@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iris Input Form</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body class="home_page">
+
+  <center><h2>Enter Iris Flower Features</h2></center> 
+
+  <form action="/predict" method="post">  <!-- Defines the form and where it sends data, 
+  "Send the user's input to the Flask route /predict using the POST method." -->
+
+   <center><label><i>Sepal Length:</i></label></center>
+    <center><input type="number" name="sepal_length" step="0.1"><br><br></center>
+
+    <center><label><i>Sepal Width:</i></label></center>
+    <center><input type="number" name="sepal_width" step="0.1"><br><br></center>
+
+    <center><label><i>Petal Length:</i></label></center>
+    <center><input type="number" name="petal_length" step="0.1"><br><br></center>
+
+    <center><label><i>Petal Width:</i></label></center>
+    <center><input type="number" name="petal_width" step="0.1"><br><br></center>
+
+    <center><input type="submit" value="Predict Species"></center>
+  </form>
+
+</body>
+
+</html>
